@@ -14,7 +14,8 @@ const config = {
   appId: "1:763760798484:web:45de67d70f11a317"
 };
 
-const firebase = require('firebase');
+const firebase = require('firebase')
+require('firebase/auth')
 firebase.initializeApp(config);
 
 const db = admin.firestore();
